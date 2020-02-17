@@ -1,0 +1,142 @@
+@charset = "utf-8";
+
+@font-face {  /*referencing fonts*/
+	font-family: navFont;
+	src: url('AGENCYR.ttf') format('truetype');
+	font-weight: bold;
+}
+@font-face {  /*referencing fonts*/
+	font-family: navFontBold;
+	src: url('AGENCYB.ttf') format('truetype');
+	font-weight: bold;
+}
+
+html{
+	background-color: rgba(0, 0, 255, 0.6);
+}
+
+/* TOP PAGE STYLES */
+div.topPage{
+	background-color: gray;
+	position: relative;
+	display: block;
+	height: 52px;
+	width: 100%;
+	border: 3px outset;
+}
+div.topPage > a >img{
+	transition: transform 2s;
+	}
+div.topPage > a:hover > img{
+	transform: rotate(360deg);
+}
+p#ctacall{
+	color: white;
+	font-family: navFont;
+	display: inline;
+	font-size: 1.5em;
+	width: 10%;
+
+}
+/* END OF TOP PAGE STYLES */
+
+body{
+	background-color: white;
+}
+
+/* NAV STYLES */
+nav.navHome ul li a{
+	height: 44px;
+	color: green;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	background-color: white;
+	font-family: navFont;
+	font-size: 1.4em;
+	line-height: 1.8em;
+	text-align: center;
+	transition: font-size 0.35s ease-in, height 0.35s ease-in;
+}
+
+
+/* visited link */
+nav.navHome li a:visited {
+  color: black;
+}
+
+/* mouse over link */
+nav.navHome li a:hover {
+	position:relative;
+	color: blue;
+	font-size: 2em;
+	height: 2em;
+	box-shadow: 2px 2px 8px black;
+}
+
+/* selected link */
+nav.navHome li a:active {
+  color: blue;
+}
+nav.navHome li a:focus {
+  background-color: green;
+}
+/* END OF NAV STYLES */
+
+/* LATEST POD STYLES */
+section#latestPod > div#info > p#title{
+	font-family: navFont;
+	font-size: 1em;
+}
+body >section#latestPod {
+	background-image: linear-gradient(to bottom right, black, green, black);
+	color: white;
+	
+}
+body > section#latestPod > div#info > h1#heading{
+	font-family: navFontBold;
+	font-size: 2em;
+	text-shadow: 2px 2px blue;
+}
+body > section#latestPod> div#info >p#title{
+	font-family: navFontBold;
+	font-size: 1.25em;
+	
+}
+/* END OF LATEST POD STYLES */
+
+/* NEWS STYLES */
+body > section#news{
+	background-color: hsla(213, 100%, 50%, 1.0);
+	font-family: navFontBold;
+	font-size: 3em;
+	padding-left: 0%;
+}
+footer{
+	padding-top: 30px;
+	clear: both;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+audio#audio {
+	display: block;
+	margin-top: 50px;
+	margin: 10px auto;
+	width: 90%;
+}
+/* END OF NEWS STYLES */
+
+/* FOOTER STYLES */
+#crossref{
+	float:left;
+	border: 1px solid black;
+	color: red;
+}
+
+p#time{
+	clear: both;
+	font-family: navFont;
+	font-size: 2em;
+}
+/* END OF FOOTER STYLES */
+

@@ -1,0 +1,169 @@
+@charset = "utf-8";
+/*BODY STYLES*/
+body {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+	min-width: 265px;
+	width: 100%;
+}
+
+body > header > a > img{
+	display: block;
+	width: 100%
+}
+/* NAV STYLES */
+nav.navHome {
+	position: relative;
+	height: 44px;
+	
+}
+body > header > nav > ul{
+	height: auto;
+	position: absolute;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+nav.navHome li {
+	display: block;
+	float: left;
+width: 25%;
+}
+nav.navHome a{
+	display: block;
+	text-align: center;
+}
+#navicon{
+	display: none;
+}
+/* END OF NAV STYLES */
+
+/*BIO STYLES*/
+div.royBio{
+	margin: 1%;
+	font-family: navFont;
+	width: 100%;
+	float: left;
+
+}
+div.royBio h1{
+	box-shadow: 2px 2px 8px black;
+	color: white;
+	width: 60%;
+	padding: 2%;
+	font-size: 2em;
+	background-color:blue;
+	border-radius: 25px;
+	border: 10px inset green;
+}
+div.royBio p{
+	box-shadow: 2px 2px 8px black;
+	color: white;
+	display: block;
+	float: left;
+	width: 50%;
+	margin-left: 15%;
+	margin-right: 0%;
+	padding: 2%;
+	font-size: 1.2em;
+	background-color: green;
+	border-radius: 25px;
+	border: 10px inset blue;
+}
+div.royBio p::first-letter{
+	font-size: 2em;
+	text-shadow: 2px 2px 8px blue;
+}
+div.royBio img{
+	box-shadow: 2px 2px 8px black;
+	margin-top: 2%;
+	display: inline;
+	width: 200px;
+	height: auto;
+	border: 10px inset blue;
+	opacity: 0.6;
+}
+/* END OF BIO STYLES */
+
+
+/* TABLE STYLES */
+table.schedule {
+	box-shadow: 2px 2px 8px black;
+	background: white;
+	border: 10px solid hsl(213, 100%, 50%);
+	font-size: 0.75em;
+	width: 75%;
+	border-collapse: collapse;
+	
+}
+table.schedule th, table.schedule td {
+	border: 1px solid gray;
+	padding: 5px;
+	vertical-align: top;
+}
+
+table.schedule caption {
+	caption-side: bottom;
+	text-align: right;
+	font-family: navFont;
+	font-size: 1.5em;
+
+}
+
+table.schedule thead {
+	color: white;
+}
+table.schedule tfoot {
+	background: black;
+	color: white;
+}
+table.schedule thead tr {
+height: 30px;
+}
+table.schedule tbody tr {
+height: 40px;
+}
+
+col.dayCols {
+	background: white;
+	width: 12%;
+}
+tr.days{
+	background-color: blue;
+}
+/* END OF TABLE STYLES */
+
+/* ===============================
+Mobile Styles: 0px to 480px
+===============================
+*/
+@media only screen and (max-width: 480px) {
+
+	nav.navHome > ul {
+		display: none;
+	}
+	#navicon{
+		float: right;
+		display: block;
+	}
+
+	a#navicon:hover+ul, nav.navHome ul:hover {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		display: block;
+		float: right;
+		width: 50%;
+}
+	nav.navHome li{
+	width: 100%;
+	float: right;
+	}
+
+}
+
+
+
+	

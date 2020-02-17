@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+@font-face {  /*referencing fonts*/
+	font-family: navFont;
+	src: url('AGENCYR.ttf') format('truetype');
+	font-weight: bold;
+}
+@font-face {  /*referencing fonts*/
+	font-family: navFontBold;
+	src: url('AGENCYB.ttf') format('truetype');
+	font-weight: bold;
+}
+
+/* BODY STYLES*/
+body {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+	min-width: 265px;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+body > header > a > img{
+	display: block;
+	width: 100%
+}
+/* END OF BODY STYLES */
+
+/*NAV STYLES*/
+nav.navHome {
+	position: relative;
+	height: 44px;
+	
+}
+body > header > nav > ul{
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+}
+
+nav.navHome li {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+nav.navHome a{
+	display: block;
+	text-align: center;
+}
+#navicon{
+	display: none;
+}
+/* END OF NAV STYLES */
+
+/* FORM STYLES */
+section.form {
+	
+	padding-top: 4%;
+	width: 100%;
+	display: flex;
+}
+section.form > form#ContactInfo{
+	
+	background-color: white;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+section.form > form#ContactInfo > fieldset#custInfo{
+	box-shadow: 2px 2px 8px black;
+	background-color: white;
+	background-color: rgba(0,0,255,0.6);
+	margin: 10px;
+	background-color: none;
+	width: 50%;
+	
+}
+section.form > form#ContactInfo > fieldset#custInfo > div{
+	padding: 10px;
+}
+section.form > form#ContactInfo > fieldset#custInfo > div > *{
+	display: flex;
+	padding-bottom: 1px;
+	flex-direction: column;
+}
+ label[for = info]{
+	font-family: navFontBold;
+	font-size: 1.5em;
+}
+input, select{
+	box-shadow: 2px 2px 8px black;
+	line-height: 2em;
+}
+legend{
+	font-family: navFontBold;
+	font-size: 1.5em;
+}
+
+ div.Buttons{
+	display: flex;
+	justify-content: center;
+}
+button.button{
+	font-family: navFontBold;
+	font-size: 2em;
+	color: white;
+	background-color: green;
+	padding-left:10px;
+	padding-right: 10px;
+}
+input:focus{
+	color: blue;
+}
+input:valid, textarea:valid{
+	background-color: green;
+}
+/* END OF FORM STYLES */
+
+/* ===============================
+Mobile Styles: 0px to 480px
+===============================
+*/
+@media only screen and (max-width: 480px) {
+
+	nav.navHome > ul {
+		display: none;
+	}
+	#navicon{
+		float: right;
+		display: block;
+		padding-right: 5%;
+	}
+
+	a#navicon:hover+ul, nav.navHome ul:hover {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		display: block;
+		float: right;
+		width: 50%;
+}
+	nav.navHome li{
+	width: 100%;
+	float: right;
+	}
+	
+
+
+
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta @charset="utf-8"/>
+	<meta name="description" content="Johnny Canuck Podcast">
+	<meta name="keywords" content="Johnny,Canuck,Vancouver,Podcast">
+	<meta name="author" content="Kyle Bergman">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Johnny Canuck Podcast</title>
+	<link href="jc_reset.css" rel="stylesheet"/>
+	<link href="jc_home_styles.css" rel="stylesheet"/>
+	<link href="jc_contactUs.css" rel="stylesheet"/>
+	<script src="jc_javascript.js"></script>
+	<script>
+
+	</script>
+</head>
+
+<body>
+	<header>
+		<div class="topPage">
+			<a href="https://www.nhl.com/canucks"> <img src="canuckslogo.png" alt="canuckslogo" height="42" width="42"/></a>
+			<a href="spotify:show:4AefuQW6voKbZJOV6tNg1W"> <img src="spotifylogo.png" alt="spotifylogo" height="42" width="42"/></a>
+			<a href="https://podcasts.apple.com/us/podcast/id1477877396"> <img src="applelogo.png" alt="applelogo" height="42" width="42"/></a>
+			<a href="https://twitter.com/johnnycanuckpod?lang=en"> <img src="twitterlogo.png" alt="twitterlogo" height="42" width="42"/></a>
+			<p id="ctacall">&#8592; Follow Us!</p>
+		</div>
+		<a href="jc_home.html"><img src="Logo.jpg" alt="JohnnyCanuck"/></a>
+		<nav class="navHome">
+			<a id="navicon" href="#"><img id = "naviconImg" src="jc_navicon.png" alt="" /></a>
+			<ul>
+				<li><a href="jc_home.html">HOME</a></li>
+				<li> <a href="jc_podcasts.html">PODCASTS</a></li>
+				<li> <a href="jc_about.html">ABOUT</a></li>
+				<li> <a href="jc_contactUs.html">CONTACT US</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="form">
+		<form name ="ContactInfo" id="ContactInfo" action="" method="post">
+			<fieldset id="custInfo">
+				<legend>Send Us an Email!</legend>
+				<div class="formRow">
+					<label for="info">Name</label>
+					<input name="custfName" id="firstname" type="text" maxlength="30" required />
+				</div>
+				<div class="formRow">
+					<label for="info">Last Name</label>
+					<input name="custlName" id="lastname" type="text" maxlength="30" required />
+				</div>
+				<div class="formRow">
+					<label for="info">E-Mail</label>
+					<input name="custEmail" id="mail" type="email" required />
+				</div>
+				
+				<div class="formRow">
+					<label for="info">Where did you hear about us?<br /></label>
+					<select name="infoSrc" id="infoScroll" size="4" multiple>
+						<option value="spotifySelect">Spotify</option>
+						<option value="appleSelect">Apple Podcasts</option>
+						<option value="twitterSelect">Twitter</option>
+						<option value="facebookSelect">Facebook</option>
+						<option value="internet">Internet</option>
+						<option value="otherSelect">Other</option>
+					</select>
+				</div>
+				<div class="formRow">
+					<label for="info">Message</label>
+					<textarea name="custExp" id="commBox" rows = "5" cols= "30" required ></textarea>
+				</div>
+				<div class="Buttons">
+					<button type="submit" class="button" onclick="validation()">SEND</button>
+					<button type="reset" class="button">RESET</button>
+				</div>
+				
+			</fieldset>
+		</form>
+	</section>
+		<footer>
+		<p id="time"></p>
+		<h1>Last Modify Date: 11/27/2019</h2>
+		
+	</footer>
+	
+</body>
+</html>

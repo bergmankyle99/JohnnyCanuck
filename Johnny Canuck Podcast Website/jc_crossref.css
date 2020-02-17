@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+@font-face {  /*referencing fonts*/
+	font-family: navFont;
+	src: url('AGENCYR.ttf') format('truetype');
+	font-weight: bold;
+}
+@font-face {  /*referencing fonts*/
+	font-family: navFontBold;
+	src: url('AGENCYB.ttf') format('truetype');
+	font-weight: bold;
+}
+html{
+	font-family: navFont;
+	font-size: 1.5em;
+}
+p{
+	font-family: navFontBold;
+}

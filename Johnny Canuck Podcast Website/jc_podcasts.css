@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+@font-face {  /*referencing fonts*/
+	font-family: navFont;
+	src: url('AGENCYR.ttf') format('truetype');
+	font-weight: bold;
+}
+@font-face {  /*referencing fonts*/
+	font-family: navFontBold;
+	src: url('AGENCYB.ttf') format('truetype');
+	font-weight: bold;
+}
+
+/* BODY STYLES */
+body {
+	
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+	min-width: 265px;
+	width: 100%;
+}
+
+body > header > a > img{
+	display: block;
+	width: 100%
+}
+label[for = desc]{
+	padding-left: 2%;
+	font-family: navFontBold;
+	font-size: 1.25em;
+
+}
+div.col-2-3{
+
+
+	font-family: navFont;
+	font-size: 1.5em;
+
+	background-color: white;
+}
+
+section.podcastshead{
+	padding-top: 2%;
+	padding-bottom: 1%;
+	font-family: navFontBold;
+	font-size: 2em;
+	text-align: center;
+	border-top: 2px solid;
+	border-right: 2px solid;
+	border-left: 2px solid;
+
+	
+}
+h1.checkItOut{
+	margin: 0;
+	width:100%;
+}
+/* END OF BODY STYLES*/
+
+/*NAV STYLES*/
+body > header > nav > ul{
+	width: 100%;
+	margin: auto;
+	padding: 0;
+	position: absolute;
+	
+}
+nav.navHome {
+	position: relative;
+	height: 44px;
+	
+}
+body > header > nav > ul{
+	height: auto;
+	position: absolute;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*display nav elements in a line*/
+nav.navHome li {
+	display: block;
+	float: left;
+width: 25%;
+}
+nav.navHome a{
+	display: block;
+	text-align: center;
+}
+
+div.row{
+	background-color: white;
+	border: 2px solid;
+}
+#navicon{
+	display: none;
+}
+
+/* END OF NAV STYLES*/
+#time{
+	margin-right: 30%;
+}
+
+
+
+/* ===============================
+Mobile Styles: 0px to 480px
+===============================
+*/
+@media only screen and (max-width: 480px) {
+
+	nav.navHome > ul {
+		display: none;
+	}
+	#navicon{
+		float: right;
+		display: block;
+		padding-right: 5%;
+	}
+
+	nav.navHome li{
+		position: relative;
+	width: 100%;
+	float: right;
+	}
+	
+	a#navicon:hover+ul, nav.navHome ul:hover {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		display: block;
+		float: right;
+		width: 50%;
+}
+
+
+
+div.col-1-3{
+	width: 100%;
+}
+div.col-2-3{
+	width:100%;
+}
+section.podcastshead{
+	padding-bottom: 30px;
+}
+}
+/* ================================
+Tablet Styles: 481px and greater
+================================
+*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+	
+
+div.col-1-3{
+	width: 100%;
+}
+div.col-2-3{
+	width:100%;
+}
+section.podcastshead{
+	padding-bottom: 30px;
+}
+}
+
+
+
+
+
+
+
+
+
